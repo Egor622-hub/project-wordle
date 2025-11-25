@@ -35,7 +35,7 @@ class Wordle(QWidget):
         lable_layout = QGridLayout()
         lable_layout.setSpacing(5)
         self.label_print = QLabel(self)
-        self.label_print.setText('У вас 6 попыток')
+        self.label_print.setText('Ваша задача отгадать слово из 5 букв. У вас 6 попыток\nЗелёный цвет - буква стоит в правильном месте\nЖёлтый цвет - буква есть в слове но в другом месте\nСерый цвет - буквы нет в слове')
         self.label_print.setStyleSheet("font-size: 18px; font-weight: bold;")
         print_layout = QGridLayout()
         print_layout.addWidget(self.label_print)
@@ -195,7 +195,7 @@ class Wordle(QWidget):
                                     font-weight: bold;
                                     color: black;
                                     qproperty-alignment: AlignCenter;""")
-        self.label_print.setText('У вас 6 попыток')
+        self.label_print.setText('Ваша задача отгадать слово из 5 букв. У вас 6 попыток\nЗелёный цвет - буква стоит в правильном месте\nЖёлтый цвет - буква есть в слове но в другом месте\nСерый цвет - буквы нет в слове')
 
 
 if __name__ == '__main__':
